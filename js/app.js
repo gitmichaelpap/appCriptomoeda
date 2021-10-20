@@ -15,7 +15,7 @@ ajax.onreadystatechange = function(){
 
         if(data_json.length == 0){
 
-            content.innerHTML = '<div class="alert alert-warning" role="alert">Nenhum curriculo cadastrado.</div>';
+            content.innerHTML = '<div class="alert alert-warning" role="alert">Nenhuma moeda cadastrada.</div>';
 
         }else{
             var html_content = "";
@@ -24,12 +24,12 @@ ajax.onreadystatechange = function(){
 
                 html_content += '<div class="row title_cat"><div class="col-12"><h2>'+data_json[i].cargo+'</h2></div></div><div class="row">';
 
-                if(data_json[i].pessoa.length == 0){
-                    html_content += '<div class="col-12"><div class="alert alert-warning" role="alert">Nenhum curriculo cadastrado para este cargo.</div></div>';
+                if(data_json[i].moeda.length == 0){
+                    html_content += '<div class="col-12"><div class="alert alert-warning" role="alert">Nenhuma moeda cadastrada.</div></div>';
                 }else{
                     
-                    for(var j = 0; j < data_json[i].pessoa.length; j++){
-                        html_content += card_pessoa(data_json[i].pessoa[j].nome,data_json[i].pessoa[j].imagem,data_json[i].pessoa[j].posicao,data_json[i].pessoa[j].url_linkedin,data_json[i].pessoa[j].experiencia,data_json[i].pessoa[j].formacao,data_json[i].pessoa[j].habilidades);
+                    for(var j = 0; j < data_json[i].moeda.length; j++){
+                        html_content += card_moeda(data_json[i].moeda[j].nome,data_json[i].moeda[j].imagem,data_json[i].moeda[j].posicao,data_json[i].moeda[j].url_home);
                     }
 
                 }
@@ -42,7 +42,7 @@ ajax.onreadystatechange = function(){
     }
 }
 
-var card_pessoa = function(nome, imagem, posicao, url_linkedin, experiencia, formacao, habilidades){
+var card_moeda = function(nome, imagem, posicao, url_home){
 
 
     return '<div class="col-md-4">'+       
@@ -51,25 +51,14 @@ var card_pessoa = function(nome, imagem, posicao, url_linkedin, experiencia, for
                     '<h5 class="card-header">'+nome+'</h5>'+
                     '<div class="card-body" style="text-align: center;">'+
                         '<h5 class="card-title">'+posicao+'</h5>'+
-                        '<p class="card-text">Largo conhecimento técnico e liderança.</p>'+
-                        '<a href="#" onClick="javascript:dadosModal(\''+nome+'\', \''+experiencia+'\', \''+formacao+'\', \''+habilidades+'\');" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#fullProfile">Sobre</a>&nbsp;'+
-                        '<a href="'+url_linkedin+'" target="_blank" class="btn btn-info">Linked-in</a>'+
+                        '<p class="card-text">Bora minerar!</p>'+
+                        '<a href="'+url_home+'" target="_blank" class="btn btn-info">Projeto</a>'+
                     '</div>'+
                 '</div>'+
             '</div>';
 
 }
 
-var dadosModal = function(nome, experiencia, formacao, habilidades){
-
-    console.log(nome);
-
-    document.getElementById('fullProfile_Title').innerHTML = nome;
-    document.getElementById('fullProfile_Experiencia').innerHTML = experiencia;
-    document.getElementById('fullProfile_Formacao').innerHTML = formacao;
-    document.getElementById('fullProfile_Habilidade').innerHTML = habilidades;
-
-}
 
 //Cache Dinâmico
 
@@ -84,10 +73,10 @@ var cache_dinamico = function(data_json){
                 var files = ['dados.json'];
 
                 for(var i = 0; i <data_json.length; i++){
-                    for(var j = 0; j < data_json[i].pessoa.length; j++){
+                    for(var j = 0; j < data_json[i].moeda.length; j++){
 
-                        if(files.indexOf(data_json[i].pessoa[j].imagem) == -1){
-                            files.push(data_json[i].pessoa[j].imagem);
+                        if(files.indexOf(data_json[i].moeda[j].imagem) == -1){
+                            files.push(data_json[i].moeda[j].imagem);
                         }
                     
                     }

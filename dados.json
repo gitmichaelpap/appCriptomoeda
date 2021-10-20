@@ -1,54 +1,36 @@
 [
     {
-        "cargo":"Engenheiro de Software",
-        "pessoa":[
+        "cargo":"Grandes Projetos",
+        "moeda":[
             {
-                "nome":"Paulo Henrique",
+                "nome":" Axie Infinity",
                 "imagem":"imgs/people_002.jpg",
-                "posicao":"Engenheiro Lider - iFood",
-                "url_linkedin":"http://www.globo.com",
-                "experiencia":"Experiencia - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
-                "formacao":"Formação - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
-                "habilidades":"Habilidades - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis."
+                "posicao":"#26",
+                "url_home":"https://axieinfinity.com/"
             },
             {
-                "nome":"Paula Fernandes",
+                "nome":"Bitcoin",
                 "imagem":"imgs/people_001.jpg",
-                "posicao":"Engenheira Seinor - Nubank",
-                "url_linkedin":"http://www.google.com",
-                "experiencia":"Experiencia - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
-                "formacao":"Formação - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
-                "habilidades":"Habilidades - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis."
+                "posicao":"#1",
+                "url_home":"https://www.bitcoin.com/"
             },
             {
-                "nome":"Marília Medonça",
+                "nome":"Cardano - ADA",
                 "imagem":"imgs/people_003.jpg",
-                "posicao":"Engenheira Pleno - UOL",
-                "url_linkedin":"http://www.uol.com",
-                "experiencia":"Experiencia - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
-                "formacao":"Formação - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
-                "habilidades":"Habilidades - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis."
+                "posicao":"#4",
+                "url_home":"https://cardano.org/"
             }                      
         ]
     },
     {
-        "cargo":"Arquiteto de Software",
-        "pessoa":[
+        "cargo":"Projetos Bagunçados",
+        "moeda":[
             {
-                "nome":"Marcos Arrais",
+                "nome":"Ethereum",
                 "imagem":"imgs/people_004.jpg",
-                "posicao":"Engenheiro Lider - iFood",
-                "url_linkedin":"http://www.globo.com",
-                "experiencia":"Experiencia - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
-                "formacao":"Formação - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
-                "habilidades":"Habilidades - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis."
+                "posicao":"#2",
+                "url_home":"https://ethereum.org/"
             }                    
         ]
-    },
-    {
-        "cargo":"Devops",
-        "pessoa":[
-                 
-        ]
-    }     
+    }
 ]

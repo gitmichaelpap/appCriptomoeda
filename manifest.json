@@ -1,6 +1,6 @@
 {
-    "name": "Connect People - App",
-    "short_name": "Connect People",
+    "name": "Cripto - App",
+    "short_name": "Cripto",
     "icons": [{
       "src": "icons/128.png",
       "sizes": "128x128",
@@ -29,6 +29,6 @@
     }],
     "start_url": "index.html",
     "display": "standalone",
-    "background_color": "#b0029f",
-    "theme_color": "#b0029f"
+    "background_color": "#AAA",
+    "theme_color": "#000"
   }

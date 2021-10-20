@@ -17,39 +17,17 @@
     <!-- iOS meta tags and icons -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Connect Peeople">
+    <meta name="apple-mobile-web-app-title" content="Cripto">
     <link rel="apple-touch-icon" href="icons/152.png">
 
-    <meta name="description" content="App para conectar pessoas da TI">
-    <meta name="theme-color" content="#b0029f" />
+    <meta name="description" content="App para conhecer Criptomoedas">
+    <meta name="theme-color" content="#000" />
 
-    <title>Connect Peeople - App</title>
+    <title>Cripto - App</title>
   </head>
   <body>
 
     <!-- Detalhamento do Card-->
-
-    <!-- Modal -->
-    <div class="modal fade" id="fullProfile" tabindex="-1" aria-labelledby="fullProfile" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="fullProfile_Title">---</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" id="fullProfile_Body">
-                <h5>Exeperiência:</h5>
-                <span id="fullProfile_Experiencia"></span>
-                <h5>Formação Profissional:</h5>
-                <span id="fullProfile_Formacao"></span>
-                <h5>Habilidades:</h5>
-                <span id="fullProfile_Habilidade"></span>
-
-            </div>
-        </div>
-        </div>
-    </div>
-
 
     <header class="container-fluid fixed-top">
         <img src="imgs/logo1.png" class="logo">
@@ -100,7 +78,7 @@
 
             if(data_json.length == 0){
 
-                content.innerHTML = '<div class="alert alert-warning" role="alert">Nenhum curriculo cadastrado.</div>';
+                content.innerHTML = '<div class="alert alert-warning" role="alert">Nenhuma moeda cadastrada.</div>';
 
             }else{
                 var html_content = "";
@@ -109,12 +87,12 @@
 
                     html_content += '<div class="row title_cat"><div class="col-12"><h2>'+data_json[i].cargo+'</h2></div></div><div class="row">';
 
-                    if(data_json[i].pessoa.length == 0){
-                        html_content += '<div class="col-12"><div class="alert alert-warning" role="alert">Nenhum curriculo cadastrado para este cargo.</div></div>';
+                    if(data_json[i].moeda.length == 0){
+                        html_content += '<div class="col-12"><div class="alert alert-warning" role="alert">>Nenhuma moeda cadastrada.</div></div>';
                     }else{
                         
-                        for(var j = 0; j < data_json[i].pessoa.length; j++){
-                            html_content += card_pessoa(data_json[i].pessoa[j].nome,data_json[i].pessoa[j].imagem,data_json[i].pessoa[j].posicao,data_json[i].pessoa[j].url_linkedin,data_json[i].pessoa[j].experiencia,data_json[i].pessoa[j].formacao,data_json[i].pessoa[j].habilidades);
+                        for(var j = 0; j < data_json[i].moeda.length; j++){
+                            html_content += card_moedas(data_json[i].moeda[j].nome,data_json[i].moeda[j].imagem,data_json[i].moeda[j].posicao,data_json[i].moeda[j].url_home);
                         }
 
                     }
@@ -126,7 +104,7 @@
         }
     }
 
-    var card_pessoa = function(nome, imagem, posicao, url_linkedin, experiencia, formacao, habilidades){
+    var card_moedas = function(nome, imagem, posicao, url_home){
 
 
         return '<div class="col-md-4">'+       
@@ -135,22 +113,11 @@
                         '<h5 class="card-header">'+nome+'</h5>'+
                         '<div class="card-body" style="text-align: center;">'+
                             '<h5 class="card-title">'+posicao+'</h5>'+
-                            '<p class="card-text">Largo conhecimento técnico e liderança.</p>'+
-                            '<a href="#" onClick="javascript:dadosModal(\''+nome+'\', \''+experiencia+'\', \''+formacao+'\', \''+habilidades+'\');" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#fullProfile">Sobre</a>&nbsp;'+                    
+                            '<p class="card-text">Bora minerar!</p>'+
+                            '<a href="'+url_home+'" target="_blank" class="btn btn-info">Projeto</a>'+
                         '</div>'+
                     '</div>'+
                 '</div>';
-
-    }
-
-    var dadosModal = function(nome, experiencia, formacao, habilidades){
-
-        console.log(nome);
-
-        document.getElementById('fullProfile_Title').innerHTML = nome;
-        document.getElementById('fullProfile_Experiencia').innerHTML = experiencia;
-        document.getElementById('fullProfile_Formacao').innerHTML = formacao;
-        document.getElementById('fullProfile_Habilidade').innerHTML = habilidades;
 
     }
 
