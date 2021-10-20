@@ -1,0 +1,61 @@
+header{
+    background: url('../imgs/bg1.jpg');
+    background-size: cover;
+    height: 60px;
+    -webkit-box-shadow: 0px 4px 12px 3px rgba(0,0,0,0.56); 
+    box-shadow: 0px 4px 12px 3px rgba(0,0,0,0.56);  
+}
+
+.logo{
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: -10px;
+}
+
+main{
+    margin-top: 85px;
+    margin-bottom: 50px;
+}
+
+.title_cat h2{
+    background: url('../imgs/cat_icon.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 32px;
+    padding: 8px;
+    font-size: 1.1rem;
+    color: #07c8da;
+    border-bottom: 2px solid #07c8da;
+    padding-left: 45px;
+}
+.card{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.card-header{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 1.5rem;
+    color: #b0029f;
+}
+#fullProfile_Title{
+    color: #b0029f;
+}
+.img_profile{
+    border-radius: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: -65px;
+}
+
+footer{
+    background: url('../imgs/bg1.jpg');
+    background-size: cover;
+    height: 60px;
+    padding: 10px;
+}
